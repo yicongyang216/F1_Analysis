@@ -23,22 +23,14 @@ Includes data on races, results, qualifying sessions, drivers, constructors, and
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 - Strong positive correlation between qualifying position and race finish position   
 - The analysis provides insights into how qualifying rank, circuit type, and weather conditions  shape race outcomes  
 
 ---
 
-## 📈 Visualization Examples
-
-| ![Qualifying vs Finish Scatter](images/scatter.png) | ![Feature Importance](images/feature_importance.png) |
-|:--:|:--:|
-| *Qualifying vs Finish Position* | *Feature Importance (Random Forest)* |
-
----
-
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Languages:** Python  
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
@@ -46,7 +38,7 @@ Includes data on races, results, qualifying sessions, drivers, constructors, and
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Yicong Yang**  
 Undergraduate Student in Computer Science @ University of Virginia  
