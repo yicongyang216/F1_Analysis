@@ -61,6 +61,7 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 f1_project.db
+image.packaging/
 
 # Flask stuff:
 instance/
