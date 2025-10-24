@@ -1,14 +1,8 @@
 # F1 Race Performance Analysis (2021–2024)
 
-This project analyzes the relationship between **qualifying positions** and **final race results** in Formula 1 seasons (2021–2024).  
-
-It explores what are factors, also why & how influence drivers' performance。
-
-The next step I will build predictive models to forecast race outcomes.
-
----
-
 ## Project Overview
+
+This project analyzes Formula 1 race data from the 2021 to 2024 seasons to understand the dynamics of position changes during a race. The primary goal is to investigate the factors that influence whether a driver gains or loses positions relative to their starting grid spot.
 
 **Data Sources:**  
 - Kaggle Formula 1 Dataset (https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
@@ -34,21 +28,35 @@ Creates a second, pre-filtered table (master_finished_analysis_data) for easier 
 
 **Exploratory Data Analysis (EDA):**
 
-- Visualized correlations and distributions using matplotlib and seaborn.
-
-- Analyzed position changes (grid - racePosition), incident frequencies, and performance by circuit type.
+- The position_change (calculated as grid - racePosition) was analyzed using its Average (Mean), Median, and Standard Deviation (SD) to provide a comprehensive performance picture.
 
 ---
 
 ## Key Findings
 
-- A strong positive correlation exists between qualifying position and race finish position.
+**Driver Performance:**
 
-- Most drivers finish close to their starting position. The median position change is slightly positive (+1.00), suggesting a tendency for drivers to gain positions.
+The average (mean) position change is a misleading metric, easily skewed by a few outlier races.
 
-- High-speed circuits (e.g., Monza) show a slightly higher average position gain than medium or low-speed circuits.
+The median is a better indicator of typical performance. It revealed that veteran drivers in midfield teams (like Vettel and Räikkönen) were the strongest "Race-Day Overperformers".
 
-- Certain drivers and circuits show a significantly higher frequency of incidents (Accidents, Collisions, etc.).
+Standard Deviation (SD) effectively measured consistency. Top-tier drivers (like Verstappen) showed low SD (consistent results), while others (like Räikkönen) were highly volatile.
+
+
+**Circuit Performance:**
+
+The initial hypothesis that incidents = unpredictability was disproven.
+
+Monaco has a high incident count but one of the lowest SDs, meaning the races are predictable and processional despite the chaos.
+
+Russia had few incidents but the highest SD, suggesting track layout (long straights, DRS) is a much stronger driver of variability than incident count.
+
+
+**Circuit Type Performance:**
+
+A median analysis confirmed that a typical race on a Low-Speed circuit results in a 0.0 position change, while High and Medium speed tracks typically see a +1.0 position gain.
+
+The Standard Deviation was similarly high across all track types, indicating that all modern F1 races feature a high degree of unpredictability.
 
 ---
 
