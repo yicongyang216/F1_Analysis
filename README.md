@@ -8,6 +8,8 @@ It explores what， why & how factors influence drivers' performance。
 
 ## Project Overview
 
+This project analyzes Formula 1 race data from the 2021 to 2024 seasons to understand the dynamics of position changes during a race. The primary goal is to investigate the factors that influence whether a driver gains or loses positions relative to their starting grid spot.
+
 **Data Sources:**  
 - Kaggle Formula 1 Dataset (https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data)
 
