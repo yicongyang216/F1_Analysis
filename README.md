@@ -2,7 +2,7 @@
 
 This project analyzes the relationship between **qualifying positions** and **final race results** in Formula 1 seasons (2021–2024).  
 
-It explores what， why & how factors influence drivers' performance。
+It explores what, why & how factors influence drivers' performance。
 
 ---
 
